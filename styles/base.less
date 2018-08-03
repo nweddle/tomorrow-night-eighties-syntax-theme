@@ -11,7 +11,8 @@
     color: @blue;
   }
 
-  &.syntax--name.syntax--class, &.syntax--name.syntax--type.syntax--class {
+  &.syntax--name.syntax--class,
+  &.syntax--name.syntax--type.syntax--class {
     color: @yellow;
   }
 
@@ -119,10 +120,10 @@
       color: @comment;
     }
 
-    &.syntax--string,
-    &.syntax--variable,
+    &.syntax--array,
     &.syntax--parameters,
-    &.syntax--array {
+    &.syntax--string,
+    &.syntax--variable {
       color: @syntax-text-color;
     }
 
@@ -144,7 +145,7 @@
 
   &.syntax--section.syntax--embedded {
     color: @yellow;
-    background-color: fadeout(@yellow, 93%);
+    // background-color: fadeout(@yellow, 93%);
   }
 }
 
@@ -153,7 +154,7 @@
     color: @yellow;
   }
 
-  &.syntax--function  {
+  &.syntax--function {
     color: @blue;
 
     &.syntax--any-method {
